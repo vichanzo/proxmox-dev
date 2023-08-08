@@ -8,7 +8,7 @@ Perform a "baremetal" install using the Proxmox iso downloaded from proxmox.  (I
 
 ## Run initialization script
 Run this command as root (or add sudo) to download and run the initialization script.
-This script will install git and ansible and clone the repoository to your computer.
+This script will install git, ansible, openssh, sudo then clone the repoository to your computer.
 ```
 wget -O - https://raw.githubusercontent.com/vichanzo/proxmox-dev/main/initialize.sh | bash
 ```
