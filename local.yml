@@ -20,3 +20,7 @@
      apt:
       name:
        - xrdp
+   - name: apt install remmina
+     apt:
+      name:
+       - remmina
