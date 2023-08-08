@@ -1,0 +1,22 @@
+---
+- name: Local Apt Ansible
+  hosts: localhost
+  connection: local
+  become: true
+  tasks:
+   - name: apt install neofetch
+     apt:
+      name:
+       - neofetch
+   - name: apt install xfce4
+     apt:
+      name:
+       - xfce4
+       - xfce4-goodies
+       - xorg
+       - dbus-x11
+       - x11-xserver-utils
+   - name: apt install xrdp
+     apt:
+      name:
+       - xrdp
